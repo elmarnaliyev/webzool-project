@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Webzool - Winning Digital Solutions</title>
+        <!-- Favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/webzool-logo.png' %}">
+        <!-- Styles -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+
+        {% include 'partials/_navbar.html' %}
+        
+
+        {% include 'partials/_sidebar.html' %}
+
+
+        {% block content %} {% endblock %}
+
+
+        {% include 'partials/_footer.html' %}
+        <!--**********************************
+        Scripts
+        ***********************************-->
+        <script src="{% static 'plugins/common/common.min.js' %}"></script>
+        <script src="{% static 'js/custom.min.js' %}"></script>
+        <script src="{% static 'js/settings.js' %}"></script>
+        <script src="{% static 'js/gleek.js' %}"></script>
+        <script src="{% static 'js/styleSwitcher.js' %}"></script>
+    
+        <!-- Chartjs chart -->
+        <script src="{% static 'plugins/chart.js/Chart.bundle.min.js' %}"></script>
+        <script src="{% static 'plugins/d3v3/index.js' %}"></script>
+        <script src="{% static 'plugins/topojson/topojson.min.js' %}"></script>
+        <script src="{% static 'plugins/datamaps/datamaps.world.min.js' %}"></script>
+        <script src="{% static 'plugins-init/datamap-world-init.js' %}"></script>
+        <script src="{% static 'plugins/datamaps/datamaps.usa.min.js' %}"></script>
+        <script src="{% static 'js/dashboard/dashboard-1.js' %}"></script>
+        <script src="{% static 'js/plugins-init/datamap-usa-init.js' %}"></script>
+    </body>
+</html> 

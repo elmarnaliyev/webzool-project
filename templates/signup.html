@@ -1,0 +1,112 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en" class="h-100" id="login-page1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webzool - Signup</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/webzool-logo.png' %}">
+    <!-- Custom Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="h-100">
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <div class="login-bg h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="col-xl-6">
+                    <div class="form-input-content login-form">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="logo text-center">
+                                    <a href="{% url 'index' %}">
+                                        <img src="{% static 'images/webzool-logo.png' %}" alt="" style="width: 100px;">
+                                    </a>
+                                </div>
+                                <h4 class="text-center mt-4">Signup Here</h4>
+                                {% include 'partials/_alerts.html' %}
+                                <form action="{% url 'signup' %}" method="POST" class="mt-5 mb-5">
+                                    {% csrf_token %}
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>First Name</label>
+                                                <input type="text" name="first_name" class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Full Name</label>
+                                                <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" name="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Phone Number</label>
+                                                <input type="phone" name="phone" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="password" name="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Confirm Password</label>
+                                                <input type="password" name="password2" class="form-control"
+                                                    placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-4">
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                        <p class="mt-5">Already have an account? <a href="{% url 'login' %}">Log in</a>
+                                        </p>
+                                    </div>
+                            </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- #/ container -->
+    <!-- Common JS -->
+    <script src="{% static 'plugins/common/common.min.js' %}"></script>
+    <!-- Custom script -->
+    <script src="{% static 'js/custom.min.js' %}"></script>
+    <script src="{% static 'js/settings.js' %}"></script>
+    <script src="{% static 'js/gleek.js' %}"></script>
+</body>
+
+</html>
