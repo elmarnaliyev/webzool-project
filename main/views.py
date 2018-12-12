@@ -67,3 +67,6 @@ def logout(request):
         auth.logout(request)
         messages.success(request, 'You are successfully logged out')
         return redirect('login')
+
+def seo(request):
+    return render(request, 'packages/seo.html')
