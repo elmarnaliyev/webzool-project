@@ -70,3 +70,11 @@ def logout(request):
 
 def seo(request):
     return render(request, 'packages/seo.html')
+
+
+def design(request):
+    return render(request, 'packages/design.html')
+
+
+def development(request):
+    return render(request, 'packages/development.html')
