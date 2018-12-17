@@ -10069,8 +10069,6 @@ h4 {
     fill: #aaa
 }
 
-.bg-white {}
-
 .bg-transparent {
     color: #000
 }
@@ -10166,14 +10164,6 @@ h4 {
 .bg-inverse-rgba1 {
     background-color: #2f3d4a
 }
-
-.border-danger,
-.border-dark,
-.border-info,
-.border-primary,
-.border-secondary,
-.border-success,
-.border-warning {}
 
 .bg-facebook {
     background: #3b5998;
@@ -16398,7 +16388,6 @@ button {
 }
 
 .mail-list a {
-    vertical-align: middle;
     padding: 1rem 1.5rem;
     display: block;
     background: 0 0;
@@ -20190,7 +20179,6 @@ button:focus {
 
 .weather-one h2 {
     display: inline-block;
-    float: right;
     font-size: 4.8rem
 }
 
