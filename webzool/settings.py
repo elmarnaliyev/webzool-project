@@ -80,7 +80,8 @@ DATABASES = {
         'NAME': 'webzoolmain',
         'USER': 'postgres',
         'PASSWORD': 'icui4cu',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': 1122
     }
 }
 

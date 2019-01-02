@@ -78,3 +78,27 @@ def design(request):
 
 def development(request):
     return render(request, 'packages/development.html')
+
+
+def branding(request):
+    return render(request, 'packages/branding-and-design.html')
+
+
+def research(request):
+    return render(request, 'packages/seo-research.html')
+
+
+def smm(request):
+    return render(request, 'packages/smm.html')
+
+
+def optimization(request):
+    return render(request, 'packages/optimization.html')
+
+
+def pr(request):
+    return render(request, 'packages/pr.html')
+
+
+def content_marketing(request):
+    return render(request, 'packages/content-marketing.html')

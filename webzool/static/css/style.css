@@ -14,11 +14,7 @@
 .pricing-wrapper .single-pricing-table .btn.style-1:hover,
 .pricing-wrapper .single-pricing-table .plan-price.style-1,
 .pricing-wrapper .single-pricing-table .upper-border.style-1 {
-    background: #3398fb;
-    background: -moz-linear-gradient(left, #3398fb 0%, #8553ee 100%);
-    background: -webkit-linear-gradient(left, #3398fb 0%, #8553ee 100%);
-    background: linear-gradient(to right, #3398fb 0%, #8553ee 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3398fb', endColorstr='#8553ee', GradientType=1)
+    background-color: #F2F6F9;
 }
 
 .gradient-2,
@@ -19054,8 +19050,8 @@ button:focus {
     width: 3.5rem
 }
 
-.pricing-wrapper {
-    margin-top: 7rem
+.upper-border {
+    background-color: #7f63f4!important;
 }
 
 .pricing-wrapper .pricing-heading-text {
@@ -19102,7 +19098,17 @@ button:focus {
 .pricing-wrapper .single-pricing-table {
     position: relative;
     text-align: center;
-    min-height: 70rem
+    min-height: 40rem
+}
+
+.srp-price {
+    background-color: #04E474;
+    box-shadow: 0 0px 10px 0 rgba(62,57,107,.2), 0 2px 9px 0 rgba(62,57,107,.2);
+    height: 100%;
+    max-height: 25px;
+    line-height: 1.4;
+    color: #fff;
+    padding: 5px 10px;
 }
 
 .pricing-wrapper .single-pricing-table .upper-border {
@@ -19113,20 +19119,21 @@ button:focus {
 
 .pricing-wrapper .single-pricing-table .plan-name {
     margin-top: 2rem;
-    color: #6a707e
+    color: #6a707e;
+    text-transform: uppercase;
 }
 
 .pricing-wrapper .single-pricing-table .plan-price {
     padding: 2.8rem 0;
     margin: 3rem 0;
     display: flex;
-    color: #fff;
+    color: #222831;
     justify-content: center
 }
 
 .pricing-wrapper .single-pricing-table .plan-price h2 {
     font-size: 6rem;
-    color: #fff;
+    color: #222831;
     margin: 0;
     line-height: 1;
     font-weight: 400
